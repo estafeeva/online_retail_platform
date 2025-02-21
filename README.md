@@ -2,6 +2,13 @@
 
 ### Настройка проекта:
 ```
+pip install -r requirements.txt
+python manage.py migrate
+python manage.py runserver
+```
+
+### Этапы разработки:
+```
 pip install django==4.2 python-dotenv psycopg2
 django-admin startproject config .
 python manage.py startapp sales
@@ -20,7 +27,6 @@ pip install drf-yasg
 python -Xutf8 manage.py dumpdata sales > fixtures/sales_data.json --indent=4
 python -Xutf8 manage.py dumpdata users > fixtures/users_data.json --indent=4
 ```
-
 
 ### Описание задачи:
 
