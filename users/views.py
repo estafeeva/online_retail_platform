@@ -7,6 +7,6 @@ from users.serializers import UserSerializer
 class UsersViewSet(ModelViewSet):
     queryset = User.objects.all()
     serializer_class = UserSerializer
-    #filterset_fields = ["course", "lesson", "payment_method"]
-    #filter_backends = [OrderingFilter, DjangoFilterBackend]
-    #ordering_fields = ["payment_date"]
+    # filterset_fields = ["course", "lesson", "payment_method"]
+    # filter_backends = [OrderingFilter, DjangoFilterBackend]
+    # ordering_fields = ["payment_date"]
